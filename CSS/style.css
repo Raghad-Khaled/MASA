@@ -1,0 +1,187 @@
+
+.parallax {
+    /* The image used */
+     background-image: url("../images/background.png");
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    height: 575px; 
+}
+.color{
+    background-color: rgba(0, 0,0 , 0.5);
+    min-height: 575px; 
+}
+#icon{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.header{
+    color: white;
+    text-align: center;
+    margin-top: -15px;
+    /* font-family: 'Cairo', sans-serif; */
+    font-family: 'Changa', sans-serif;
+    letter-spacing: 2px;
+}
+.header2{
+    text-align: center;
+   
+    font-size: x-large;
+     /* font-family: 'Cairo', sans-serif;  */
+     font-family: 'Changa', sans-serif; 
+     margin-bottom: 20px;
+}
+
+.carousel-inner img {
+    width: 600px;
+    height: 350px;
+}
+
+.carousel{
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+}  
+.necklace{
+    margin-top: 20px;
+}
+.proudect{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+   
+}
+.caption{
+    
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Changa', sans-serif; 
+    margin-bottom: 40px;
+}
+
+.proudect {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .con {
+    position: relative;
+    
+  }
+
+  .con:hover .proudect {
+    opacity: 0.2
+  }
+  
+  .con:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #704f32;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-family: 'Changa', sans-serif; 
+}
+
+
+.btn{
+    margin-left: 80%;
+}
+.order{
+    font-weight: 800;
+    font-family: 'Changa', sans-serif; 
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #704f32cc;
+    border-radius: 20px;
+}
+.form-group{
+    margin: 30px;
+}
+.form-check-label{
+    margin-left: 50%;
+    margin-right: 30px;
+}
+form{
+    width: 80%;
+    margin: auto;
+}
+
+
+
+
+
+
+@media (max-width: 575.98px) { 
+    .col-form-label{
+        margin-left: 80%;
+    }
+
+    .form-check-label{
+        margin-left: 10%;
+        margin-right: 30px;
+    }
+
+    .proudect{
+        width: 70%;
+        height: 200px;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+       
+    }
+    .carousel{
+        width:350px;
+    } 
+    .carousel-inner img {
+        width: 350px;
+    }
+    
+
+  } 
+
+@media (max-width: 370px) { 
+
+    
+    .carousel{
+        width:100%;
+    } 
+
+    .carousel-inner img {
+        width: 100%;
+    }
+    
+
+}
+
+ 
