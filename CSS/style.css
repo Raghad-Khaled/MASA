@@ -1,9 +1,12 @@
-
+html {
+    scroll-behavior: smooth;
+}
+  
 .parallax {
     /* The image used */
-     background-image: url("https://popmenucloud.com/htoyiqwv/f0b77f05-c354-49e8-b1e0-12a1c852f59c.webp");
+     background-image: url("../images/5.jpg");
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 575px; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -12,12 +15,13 @@
     background-size: cover;
 
     
-    height: 575px; 
+     height: 575px;  
+    
 }
-.color{
+/* .color{
     background-color: rgba(0, 0,0 , 0.5);
     min-height: 575px; 
-}
+} */
 #icon{
     width: 130px;
     height: 130px;
@@ -28,9 +32,9 @@
     
 }
 .header{
-    color: white;
+    
     text-align: center;
-    margin-top: -15px;
+    /*margin-top: -15px;*/
     /* font-family: 'Cairo', sans-serif; */
     font-family: 'Changa', sans-serif;
     letter-spacing: 2px;
@@ -41,8 +45,11 @@
     font-size: x-large;
      /* font-family: 'Cairo', sans-serif;  */
      font-family: 'Changa', sans-serif; 
-     margin-bottom: 20px;
+     margin: 20px 0px;
 }
+
+
+
 
 .carousel-inner img {
     width: 600px;
@@ -66,9 +73,17 @@
 .caption{
     
     justify-content: center;
-    font-size: 30px;
+    font-size: 17px;
     font-family: 'Changa', sans-serif; 
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+.center{
+    justify-content: center;
+}
+
+h4{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .proudect {
@@ -89,8 +104,19 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
+
+.middle  a:hover{
+    text-decoration: none;
+    color: white;
+}
+ .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    background-color: rgba(255, 255, 255, 0.678);
+  } 
   
-  .con {
+.con {
     position: relative;
     
   }
@@ -112,37 +138,176 @@
 }
 
 
-.btn{
-    margin-left: 80%;
-}
 .order{
     font-weight: 800;
     font-family: 'Changa', sans-serif; 
     color: white;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #704f32cc;
+    background-color:  #eb8f8d;
+    background-image: linear-gradient(to bottom right, #e0d0d5, #eb8f8d);
     border-radius: 20px;
+    width: 80%;
+    margin :100px auto;
+    
+    
 }
 .form-group{
     margin: 30px;
 }
 .form-check-label{
     margin-left: 50%;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 form{
     width: 80%;
     margin: auto;
 }
+.col-form-label{
+    text-align: right;
+}
+
+#other,#Isubmit{
+    margin-right: 60%;
+}
+
+.section2{
+    display: block;
+}
+#ex{
+    margin-right: 16%;
+}
+ #section2{
+    display: none;
+}
+
+.necklaceM,.barceletM{
+    margin: 50px 0px;
+    display: none;
+}
+.textsize{
+    text-align: right;
+}
+
+.footer{
+    font-family: 'Changa', sans-serif; 
+    text-align: center;
+
+}
+.icons{
+    margin-top: 30px;
+}
+.footerH{
+    font-size: x-large;
+    font-weight: 400;
+}
+.massage{
+    font-family: 'Changa', sans-serif; 
+    text-align: center;
+    font-size: x-large;
+}
+
+
+/*----------------*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal2-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 
 
+/*----------------*/
+
+.whats-app {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 50px;
+    border-radius: 50%;
+     /*color: #FFF;*/ 
+    /* border-radius: 50px; */
+    text-align: center;
+    /* font-size: 30px; */
+     box-shadow: 3px 5px 3px #999; 
+    right: 40px;
+    z-index: 100;
+   
+}
+
+.whatsapp{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
 
 
 
+@media (max-width: 915px) { 
+    #other{
+        margin-right: 30%;
+    }
+}
 @media (max-width: 575.98px) { 
+    .whats-app {
+        
+        bottom: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+       
+    }
+    .whatsapp{
+        width: 40px;
+        height: 40px;
+    }
+
+    
+    
+    .necklaceM,.barceletM{
+        display: block;
+    }
+    .necklaceL,.barceletL{
+     display: none;
+    }
+    .Monw{
+        margin-left: 15%;
+    }
+
     .col-form-label{
         margin-left: 80%;
     }
@@ -166,22 +331,74 @@ form{
     .carousel-inner img {
         width: 350px;
     }
-    
+ .order{
+    width: 90%;
+    margin: auto;
+ }
 
-  } 
+ #other,#Isubmit{
+    margin-right: 5%;
+}
+#ex{
+    margin-right: 0%;
+}
+.modal2-content {
+    
+    width: 90%;
+  }
+} 
 
 @media (max-width: 370px) { 
 
     
     .carousel{
-        width:100%;
+        width:95%;
     } 
 
     .carousel-inner img {
         width: 100%;
     }
-    
+    #other{
+        margin-right: 5%;
+    }    
+    .textsize{
+        font-size: x-small;
+    }
 
+    .whats-app {
+        
+        bottom: 0px; 
+        right: 0px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .whatsapp{
+        width: 30px;
+        height: 30px;
+    }
+    
+    
 }
 
  
+
+
+
+
+
+
+
+
+
+
+.carousel-cell {
+    width: 100%;
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+      display: block;
+    }
+
+    
